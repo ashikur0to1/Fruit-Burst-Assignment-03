@@ -4,8 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Burst</title>
+    <!-- Tailwind and DaisyUI Link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lato Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Link -->
+    <script src="https://kit.fontawesome.com/5832aa502f.js" crossorigin="anonymous"></script>
+    <style>
+        .font-lato{
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
 </head>
-<body>
-    
+<body class="font-lato">
+    <header>
+            <!-- Navigation Section Start -->
+            <div class="navbar container mx-auto bg-[#F85559] rounded-[600px] px-[60px] py-6 my-14 ">
+                <div class="flex-1 text-[#FFF]">
+                    <ul class="flex gap-[30px]">
+                        <a href=""><li>Home</li></a>
+                        <a href=""><li>About Us</li></a>
+                        <a href=""><li>Shop</li></a>
+                        <a href=""><li>All Fruits</li></a>
+                    </ul>
+                </div>
+                <div class="flex flex-1 gap-4">
+                    <img src="./images/logo.png" alt="">
+                    <h1 class="text-[#FFF] text-[40px] font-bold">Fruit Burst</h1>
+                </div>
+                <div class="relative">
+                    <input type="text" placeholder="Search here" class="input rounded-[50px] w-[400px] h-14"/>
+                    <div class="absolute top-2/4 right-3 h-5 w-5 -translate-y-2/4 place-items-center">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Navigation Section End -->
+
+            <!-- Banner Section Start -->
+            <div class="hero container mx-auto" style="background-image: url(./images/banner1.png);">
+              <div class="hero-overlay bg-opacity-30"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="mt-20 mb-56">
+                  <h1 class="mb-5 text-7xl font-extrabold text-[#FFF]">Exotic tastes at your<br>doorstep</h1>
+                  <p class="mb-8 text-[20px] font-medium text-[#FFF]">We supply highly quality organic products</p>
+                  <button class="text-[#FFF] bg-[#F85559] hover:bg-[#f43f5e] text-[20px] px-8 py-5 rounded-lg font-extrabold">Shop Now</button>
+                </div>
+              </div>
+            </div>
+            <!-- Banner Section End -->
+            <div class="flex relative -mt-28 justify-around items-center text-center max-w-6xl h-60 mx-auto rounded-lg bg-[#FFF] shadow-[0_8px_60px_0px_rgba(0,0,0,0.05)] mb-36">
+              <div>
+                <img src="./images/fruit1.png" alt="">
+                <h3 class="mt-4 text-[20px] font-medium text-[#121212]">Grapes</h3>
+              </div>
+              <div>
+                <img src="./images/fruit2.png" alt="">
+                <h3 class="mt-4 text-[20px] font-medium text-[#121212]">Orange</h3>
+              </div>
+              <div>
+                <img src="./images/fruit3.png" alt="">
+                <h3 class="mt-4 text-[20px] font-medium text-[#121212]">Mango</h3>
+              </div>
+              <div>
+                <img src="./images/fruit4.png" alt="">
+                <h3 class="mt-4 text-[20px] font-medium text-[#121212]">Strawberry</h3>
+              </div>
+              <div>
+                <img src="./images/fruit5.png" alt="">
+                <h3 class="mt-4 text-[20px] font-medium text-[#121212]">Pomegranate</h3>
+              </div>
+            </div>
+    </header>
+    <main>
+            <!-- Deal Of The Day Section Start -->
+            <div class="container mx-auto">
+              <div class="flex justify-between items-center">
+                <div>
+                  <h1>Deal of the day</h1>
+                  <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+                <div class="flex justify-center items-center">
+                  <div>
+                    <h1>29</h1>
+                    <p>Days</p>
+                  </div>
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                  <div>
+                    <h1>15</h1>
+                    <p>Hours</p>
+                  </div>
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                  <div>
+                    <h1>25</h1>
+                    <p>Minutes</p>
+                  </div>
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                  <div>
+                    <h1>08</h1>
+                    <p>Seconds</p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+
+              </div>
+            </div>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
