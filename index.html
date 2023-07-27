@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Burst</title>
+    <!-- Favicon Link -->
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
     <!-- Tailwind and DaisyUI Link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -143,14 +145,14 @@
                       <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                     </div>
                     <div class="card-actions">
-                      <p>Details</p>
+                      <button onclick="card_1_modal.showModal()"><p class="text-[#F85559]">Details</p></button>
                     </div>
                   </div>
                 </div>
                 <!-- Card-2 -->
                 <div class="card bg-[#FFF] border-[1px] divide-solid border-[#1212121A] shadow-xl w-[342px]">
                   <figure class="px-10 pt-10">
-                    <img src="./images/fruit7.png" alt="" class="rounded-xl" />
+                    <img src="./images/fruit7.png" alt="" class="rounded-xl"/>
                   </figure>
                   <div class="card-body items-center text-center">
                     <h2 class="card-title">12.90$ - 18.85$</h2>
@@ -164,7 +166,7 @@
                       <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                     </div>
                     <div class="card-actions">
-                      <p>Details</p>
+                      <button onclick="card_2_modal.showModal()"><p class="text-[#F85559]">Details</p></button>
                     </div>
                   </div>
                 </div>
@@ -185,7 +187,7 @@
                       <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                     </div>
                     <div class="card-actions">
-                      <p>Details</p>
+                      <button onclick="card_3_modal.showModal()"><p class="text-[#F85559]">Details</p></button>
                     </div>
                   </div>
                 </div>
@@ -206,7 +208,7 @@
                       <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                     </div>
                     <div class="card-actions">
-                      <p>Details</p>
+                      <button onclick="card_4_modal.showModal()"><p class="text-[#F85559]">Details</p></button>
                     </div>
                   </div>
                 </div>
@@ -374,7 +376,102 @@
           </div>
     </footer>
 
-    <!-- Footer Section Start -->
+    <!-- Footer Section End -->
 
+ <!--Card-1 Modal Start-->
+<dialog id="card_1_modal" class="modal">
+  <form method="dialog" class="modal-box">
+    <figure class="px-10 pt-10 flex justify-center items-center">
+      <img src="./images/fruit6.png" alt="" class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center">
+      <h2 class="card-title text-[40px] font-extrabold my-6">Apple</h2>
+      <p class="text-base font-medium">Professional employees are there for you to pick the most <br> amazing and fresh fruits.</p>
+      <div class="rating mt-4 mb-5">
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+      </div>
+      <div class="modal-action">
+        <a href="#"><button class="text-[#F85559] bg-[#FFFFFF] text-[20px] px-[28px] py-[18px] rounded-lg font-extrabold border-solid border-2 border-gray-500">Close</button></a>
+        <a href="#"><button class="text-[#FFF] bg-[#F85559] hover:bg-[#f43f5e] text-[20px] px-[30px] py-[20px] rounded-lg font-extrabold">Buy Now</button></a>
+      </div>
+  </form>
+</dialog>
+<!--Card-1 Modal End-->
+
+<!-- Card-2 Modal Start -->
+<dialog id="card_2_modal" class="modal">
+  <form method="dialog" class="modal-box">
+    <figure class="px-10 pt-10 flex justify-center items-center">
+      <img src="./images/fruit7.png" alt="" class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center">
+      <h2 class="card-title text-[40px] font-extrabold my-6">Orange</h2>
+      <p class="text-base font-medium">Professional employees are there for you to pick the most <br> amazing and fresh fruits.</p>
+      <div class="rating mt-4 mb-5">
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+      </div>
+      <div class="modal-action">
+        <a href="#"><button class="text-[#F85559] bg-[#FFFFFF] text-[20px] px-[28px] py-[18px] rounded-lg font-extrabold border-solid border-2 border-gray-500">Close</button></a>
+        <a href="#"><button class="text-[#FFF] bg-[#F85559] hover:bg-[#f43f5e] text-[20px] px-[30px] py-[20px] rounded-lg font-extrabold">Buy Now</button></a>
+      </div>
+  </form>
+</dialog>
+<!-- Card-2 Modal End -->
+
+<!-- Card-3 Modal Start -->
+<dialog id="card_3_modal" class="modal">
+  <form method="dialog" class="modal-box">
+    <figure class="px-10 pt-10 flex justify-center items-center">
+      <img src="./images/fruit8.png" alt="" class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center">
+      <h2 class="card-title text-[40px] font-extrabold my-6">Red Dragon</h2>
+      <p class="text-base font-medium">Professional employees are there for you to pick the most <br> amazing and fresh fruits.</p>
+      <div class="rating mt-4 mb-5">
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+      </div>
+      <div class="modal-action">
+        <a href="#"><button class="text-[#F85559] bg-[#FFFFFF] text-[20px] px-[28px] py-[18px] rounded-lg font-extrabold border-solid border-2 border-gray-500">Close</button></a>
+        <a href="#"><button class="text-[#FFF] bg-[#F85559] hover:bg-[#f43f5e] text-[20px] px-[30px] py-[20px] rounded-lg font-extrabold">Buy Now</button></a>
+      </div>
+  </form>
+</dialog>
+<!-- Card-3 Modal End -->
+
+<!-- Card-4 Modal Start -->
+<dialog id="card_4_modal" class="modal">
+  <form method="dialog" class="modal-box">
+    <figure class="px-10 pt-10 flex justify-center items-center">
+      <img src="./images/fruit9.png" alt="" class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center">
+      <h2 class="card-title text-[40px] font-extrabold my-6">Banana</h2>
+      <p class="text-base font-medium">Professional employees are there for you to pick the most <br> amazing and fresh fruits.</p>
+      <div class="rating mt-4 mb-5">
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+      </div>
+      <div class="modal-action">
+        <a href="#"><button class="text-[#F85559] bg-[#FFFFFF] text-[20px] px-[28px] py-[18px] rounded-lg font-extrabold border-solid border-2 border-gray-500">Close</button></a>
+        <a href="#"><button class="text-[#FFF] bg-[#F85559] hover:bg-[#f43f5e] text-[20px] px-[30px] py-[20px] rounded-lg font-extrabold">Buy Now</button></a>
+      </div>
+  </form>
+</dialog>
+<!-- Card-4 Modal End -->
 </body>
 </html>
